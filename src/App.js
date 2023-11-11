@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Exams from './pages/student/Exams';
 import ExamDetails from './pages/student/ExamDetails';
 import CreateExam from './pages/teacher/CreateExam';
-
+import Forgot from './components/Forgot';
 import ExamList from './pages/teacher/ExamList';
 import EditQuestion from './pages/teacher/EditQuestion';
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/forgot' element={<Forgot/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/exams' element={<Exams/>}/>
         <Route path='/exams/:id' element={<ExamDetails/>}/>
